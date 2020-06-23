@@ -1,0 +1,65 @@
+server:
+  port: 8080
+
+seaboxdata:
+  core:
+    idgenerator:
+      mode: snowflake
+      datacenter: 1
+      worker: 1
+  rsp:
+    hostname:
+  auth:
+    hostname:
+
+spring:
+  application:
+    name: ROP-SERVER
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/rop_server?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: rootroot
+    hikari:
+      connection-timeout: 20000
+      minimum-idle: 1
+      maximum-pool-size: 5
+      idle-timeout: 10000
+      auto-commit: true
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
+ribbon:
+  eureka:
+    enabled: true
+  ReadTimeout: 60000
+  ConnectTimeout: 60000
+
+
+logging:
+  level:
+    "org.springframework": info
+    com.seaboxdata.service.mapper: DEBUG
+auth-server-url: http://AUTH-SERVICE.${spring.profiles.active}:8080
+security:
+  oauth2:
+    client:
+      client-id: testclientid
+      client-secret: 123456
+      scope: read_userinfo
+      access-token-uri: ${auth-server-url}/oauth/token
+      user-authorization-uri: ${auth-server-url}/oauth/authorize
+    resource:
+      check-token: ${auth-server-url}/oauth/check_token
+      token-info-uri: ${auth-server-url}/oauth/check_token
+
+ambry:
+  host: 220.194.43.5
+  port: 32708
+  temp-path: /tmp
+  ttl: 10800

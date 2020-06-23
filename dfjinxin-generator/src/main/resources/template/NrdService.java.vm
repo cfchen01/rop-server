@@ -1,0 +1,33 @@
+package ${package}.${project}.service;
+
+import com.seaboxdata.commons.query.PaginationResult;
+import ${package}.${project}.vo.${className}Vo;
+import ${package}.${project}.input.${className}Input;
+import ${package}.${project}.input.${className}PageInput;
+
+import java.util.List;
+
+/**
+ * ${comments}
+ *
+ * @author ${author}
+ * @email ${email}
+ * @date ${datetime}
+ */
+public interface Nrd${className}Service {
+
+    PaginationResult<${className}Vo> ${classname}List(${className}PageInput input);
+
+    List<${className}Vo> ${classname}All(${className}Input ${classname}Input);
+
+#if(${pk})
+    ${className}Vo ${classname}Detail(${pk.attrType} ${pk.attrname});
+#end
+
+    Boolean ${classname}Save(${className}Input ${classname}Input);
+
+    Boolean ${classname}Update(${className}Input ${classname}Input);
+
+    Boolean ${classname}Delete(${pk.attrType}[] ${pk.attrname}s);
+}
+

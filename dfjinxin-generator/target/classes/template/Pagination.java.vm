@@ -1,0 +1,23 @@
+package ${package}.${project}.response;
+
+import com.seaboxdata.commons.query.PaginationResult;
+import ${package}.${project}.vo.${className}Vo;
+
+import lombok.Data;
+
+import java.io.Serializable;
+
+/**
+ * ${comments}分页展示列表结果
+ *
+ * @author ${author}
+ * @email ${email}
+ * @date ${datetime}
+ */
+@Data
+public class Nrd${className}Pagination extends PaginationResult<${className}Vo> implements Serializable {
+
+    private static final long serialVersionUID = 3471529791854206928L;
+
+}
+

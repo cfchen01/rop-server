@@ -1,0 +1,75 @@
+package ${package}.${project}.resolver;
+
+import com.coxautodev.graphql.tools.GraphQLMutationResolver;
+import com.coxautodev.graphql.tools.GraphQLQueryResolver;
+import com.seaboxdata.commons.query.PaginationResult;
+import ${package}.${project}.vo.${className}Vo;
+import ${package}.${project}.input.${className}Input;
+import ${package}.${project}.input.${className}PageInput;
+import ${package}.${project}.service.Nrd${className}Service;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
+
+/**
+ * ${comments}resolver
+ *
+ * @author ${author}
+ * @email ${email}
+ * @date ${datetime}
+ */
+@Service
+public class ${className}Resolver implements GraphQLQueryResolver, GraphQLMutationResolver {
+
+    @Autowired
+    private Nrd${className}Service nrd${className}Service;
+
+    /**
+     * 分页
+     */
+    public PaginationResult<${className}Vo> ${classname}List(${className}PageInput ${classname}PageInput){
+        return nrd${className}Service.${classname}List(${classname}PageInput);
+    }
+
+    /**
+     * 全部
+     */
+    public List<${className}Vo> ${classname}All(${className}Input ${classname}Input){
+        return nrd${className}Service.${classname}All(${classname}Input);
+    }
+
+#if(${pk})
+    /**
+     * 信息
+     */
+    public ${className}Vo ${classname}Detail(${pk.attrType} ${pk.attrname}){
+        return nrd${className}Service.${classname}Detail(${pk.attrname});
+
+    }
+#end
+
+    /**
+     * 保存
+     */
+    public Boolean ${classname}Save(${className}Input ${classname}Input){
+        return nrd${className}Service.${classname}Save(${classname}Input);
+    }
+
+    /**
+     * 修改
+     */
+    public Boolean ${classname}Update(${className}Input ${classname}Input){
+        return nrd${className}Service.${classname}Update(${classname}Input);
+    }
+
+#if(${pk})
+    /**
+     * 删除
+     */
+    public Boolean ${classname}Delete(${pk.attrType}[] ${pk.attrname}s){
+        return nrd${className}Service.${classname}Delete(${pk.attrname}s);
+    }
+#end
+
+}

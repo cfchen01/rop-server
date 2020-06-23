@@ -1,0 +1,61 @@
+##################################################
+#
+#   ${comments}
+#
+##################################################
+extend type Query {
+    # 分页查询应用类型 #
+    ${className}List(input:${className}PageInput):Nrd${className}Pagination
+
+    ${className}All(vo:${className}Vo):[${className}Vo]
+
+#if(${pk})
+    ${className}Detail(${pk.attrname}:ID):${className}Vo
+#end
+}
+
+extend type Mutation {
+    ${className}Save(input:${className}Input):Boolean
+
+    ${className}Update(input:${className}Input):Boolean
+
+#if(${pk})
+    ${className}Delete(ids:[ID]):Boolean
+#end
+}
+
+#请求参数
+input ${className}Input {
+    offset: Int! # 跳过前offset条数据
+    limit: Int! # 读取limit条数据
+}
+
+#分页请求参数
+input ${className}PageInput {
+    offset: Int! # 跳过前offset条数据
+    limit: Int! # 读取limit条数据
+    keyword:String #关键字
+}
+
+#分页展示应用类型
+type Nrd${className}Pagination {
+    total:Int #总页数
+    offset:Int #第几页
+    limit:Int #页数量
+    data:[${className}Vo] #应用类型数据
+}
+
+#y应用类别详情
+type ${className}Vo {
+
+#foreach ($column in $columns)
+#if($column.columnName == $pk.columnName)
+    $column.attrname:ID #$column.comments
+#end
+#if($column.attrType == 'Integer')
+    $column.attrname:Int #$column.comments
+#else
+    $column.attrname:$column.attrType #$column.comments
+#end
+#end
+}

@@ -1,0 +1,99 @@
+package ${package}.${project}.service.impl;
+
+import org.springframework.stereotype.Service;
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+
+import ${package}.${project}.enums.ServiceCode;
+import com.seaboxdata.commons.exception.ServiceException;
+import com.seaboxdata.commons.query.PaginationResult;
+import ${package}.${project}.mapper.${className}Mapper;
+import ${package}.${project}.model.${className};
+import ${package}.${project}.service.I${className}Service;
+import ${package}.${project}.vo.${className}Vo;
+import ${package}.${project}.input.${className}PageInput;
+
+import org.springframework.beans.BeanUtils;
+import org.springframework.beans.factory.annotation.Autowired;
+
+import java.util.ArrayList;
+import java.util.List;
+
+
+@Service("${classname}Service")
+public class ${className}ServiceImpl extends ServiceImpl<${className}Mapper, ${className}> implements I${className}Service {
+
+    @Autowired
+    private ${className}Mapper mapper;
+
+    @Override
+    public PaginationResult<${className}Vo> ${classname}Page(${className}PageInput input) {
+        if (null == input) {
+            return null;
+        }
+        IPage<${className}> page = new Page<>(1 + (input.getOffset() / input.getLimit()), input.getLimit());
+        IPage<${className}> iPage = mapper.selectPage(page, new QueryWrapper<>());
+        PaginationResult<${className}Vo> paginationResult = new PaginationResult<>();
+        if (iPage == null) {
+            return null;
+        }
+        paginationResult.setOffset((int) iPage.getCurrent());
+        paginationResult.setLimit((int) iPage.getSize());
+        paginationResult.setTotal((int) iPage.getTotal());
+        ArrayList<${className}Vo> ${classname}Vos = new ArrayList<>();
+        List<${className}> records = iPage.getRecords();
+        for (${className} record : records) {
+            ${className}Vo vo = new ${className}Vo();
+            BeanUtils.copyProperties(record, vo);
+            ${classname}Vos.add(vo);
+        }
+        paginationResult.setData(${classname}Vos);
+        return paginationResult;
+    }
+
+    @Override
+    public List<${className}Vo> ${classname}List(${className}Vo ${classname}Vo) {
+        if (${classname}Vo == null) {
+            return null;
+        }
+        List<${className}> ${classname}s = mapper.selectList(new QueryWrapper<>());
+        ArrayList<${className}Vo> dtos = new ArrayList<>();
+        for (${className} ${classname} : ${classname}s) {
+            ${className}Vo vo = new ${className}Vo();
+            BeanUtils.copyProperties(${classname}, vo);
+            dtos.add(vo);
+        }
+        return dtos;
+    }
+
+    @Override
+    public Boolean ${classname}Save(${className}Vo ${classname}Vo) {
+        if (${classname}Vo == null) {
+            throw new ServiceException(ServiceCode.SERVICE_CODE_403, "vo" + ServiceCode.DATA_IS_EMPTY);
+        }
+        ${className} ${classname} = new ${className}();
+        BeanUtils.copyProperties(${classname}Vo, ${classname});
+        return mapper.insert(${classname}) > 0;
+    }
+
+    @Override
+    public Boolean ${classname}Update(${className}Vo ${classname}Vo) {
+        ${className} name = new ${className}();
+        BeanUtils.copyProperties(${classname}Vo, name);
+        return mapper.updateById(name) > 0;
+    }
+#if(${pk})
+    @Override
+    public ${className}Vo ${classname}Detail(${pk.attrType} ${pk.attrname}) {
+        ${className}Vo ${classname}Vo = new ${className}Vo();
+        ${className} ${classname} = mapper.selectById(${pk.attrname});
+        if (${classname} == null) {
+            return null;
+        }
+        BeanUtils.copyProperties(${classname}, ${classname}Vo);
+        return ${classname}Vo;
+    }
+#end
+}

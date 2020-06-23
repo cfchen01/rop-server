@@ -1,0 +1,80 @@
+package ${package}.${project}.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RestController;
+import com.seaboxdata.commons.query.PaginationResult;
+import ${package}.${project}.service.I${className}Service;
+import ${package}.${project}.controller.I${className}Controller;
+import ${package}.${project}.input.${className}PageInput;
+import ${package}.${project}.vo.${className}Vo;
+
+import java.util.Arrays;
+import java.util.List;
+
+/**
+ * ${comments}
+ *
+ * @author ${author}
+ * @email ${email}
+ * @date ${datetime}
+ */
+@RestController
+public class ${className}Controller implements I${className}Controller{
+
+    @Autowired
+    private I${className}Service ${classname}Service;
+
+    /**
+     * 分页
+     */
+    @Override
+    public PaginationResult<${className}Vo> ${classname}Page(${className}PageInput ${classname}PageInput){
+        return ${classname}Service.${classname}Page(${classname}PageInput);
+    }
+
+    /**
+     * 列表
+     */
+    @Override
+    public List<${className}Vo> ${classname}List(${className}Vo ${classname}Vo){
+        return ${classname}Service.${classname}List(${classname}Vo);
+    }
+
+
+#if(${pk})
+    /**
+     * 信息
+     */
+    @Override
+    public ${className}Vo ${classname}Detail(${pk.attrType} ${pk.attrname}){
+		return ${classname}Service.${classname}Detail(${pk.attrname});
+    }
+#end
+
+    /**
+     * 保存
+     */
+    @Override
+    public Boolean ${classname}Save(${className}Vo ${classname}Vo){
+        return ${classname}Service.${classname}Save(${classname}Vo);
+    }
+
+    /**
+     * 修改
+     */
+    @Override
+    public Boolean ${classname}Update(${className}Vo ${classname}Vo){
+        return ${classname}Service.${classname}Update(${classname}Vo);
+    }
+
+#if(${pk})
+    /**
+     * 删除
+     */
+    @Override
+    public Boolean ${classname}Delete(${pk.attrType}[] ${pk.attrname}s){
+		return ${classname}Service.removeByIds(Arrays.asList(${pk.attrname}s));
+    }
+#end
+
+}

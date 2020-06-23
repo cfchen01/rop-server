@@ -1,0 +1,31 @@
+package ${package}.${project}.service;
+
+import com.baomidou.mybatisplus.extension.service.IService;
+import com.seaboxdata.commons.query.PaginationResult;
+import ${package}.${project}.vo.${className}Vo;
+import ${package}.${project}.input.${className}PageInput;
+import ${package}.${project}.model.${className};
+
+import java.util.List;
+
+/**
+ * ${comments}
+ *
+ * @author ${author}
+ * @email ${email}
+ * @date ${datetime}
+ */
+public interface I${className}Service extends IService<${className}> {
+
+    PaginationResult<${className}Vo> ${classname}Page(${className}PageInput input);
+
+    List<${className}Vo> ${classname}List(${className}Vo ${classname}Vo);
+
+#if(${pk})
+    ${className}Vo ${classname}Detail(${pk.attrType} ${pk.attrname});
+#end
+    Boolean ${classname}Save(${className}Vo ${classname}Vo);
+
+    Boolean ${classname}Update(${className}Vo ${classname}Vo);
+}
+

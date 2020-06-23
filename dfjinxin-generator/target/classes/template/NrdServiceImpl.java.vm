@@ -1,0 +1,60 @@
+package ${package}.${project}.service.impl;
+
+import org.springframework.stereotype.Service;
+import java.util.Map;
+
+import com.seaboxdata.commons.query.PaginationResult;
+import ${package}.${project}.service.Nrd${className}Service;
+import ${package}.${project}.vo.${className}Vo;
+import ${package}.${project}.input.${className}Input;
+import ${package}.${project}.input.${className}PageInput;
+import ${package}.${project}.controller.I${className}Controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import java.util.List;
+
+
+@Service
+public class Nrd${className}ServiceImpl implements Nrd${className}Service {
+
+    @Autowired
+    private I${className}Controller ${classname}Controller;
+
+    @Override
+    public PaginationResult<${className}Vo> ${classname}List(${className}PageInput input) {
+        return ${classname}Controller.${classname}Page(input);
+    }
+
+    @Override
+    public List<${className}Vo> ${classname}All(${className}Input ${classname}Input) {
+        ${className}Vo ${classname}Vo = new ${className}Vo();
+        BeanUtils.copyProperties(${classname}Input, ${classname}Vo);
+        return ${classname}Controller.${classname}List(${classname}Vo);
+    }
+
+    @Override
+    public Boolean ${classname}Save(${className}Input ${classname}Input) {
+        ${className}Vo ${classname}Vo = new ${className}Vo();
+        BeanUtils.copyProperties(${classname}Input, ${classname}Vo);
+        return ${classname}Controller.${classname}Save(${classname}Vo);
+    }
+
+    @Override
+    public Boolean ${classname}Update(${className}Input ${classname}Input) {
+        ${className}Vo ${classname}Vo = new ${className}Vo();
+        BeanUtils.copyProperties(${classname}Input, ${classname}Vo);
+        return ${classname}Controller.${classname}Update(${classname}Vo);
+    }
+#if(${pk})
+    @Override
+    public ${className}Vo ${classname}Detail(${pk.attrType} ${pk.attrname}) {
+        return ${classname}Controller.${classname}Detail(${pk.attrname});
+    }
+
+    @Override
+    public Boolean ${classname}Delete(${pk.attrType}[] ${pk.attrname}s) {
+        return ${classname}Controller.${classname}Delete(${pk.attrname}s);
+    }
+#end
+}

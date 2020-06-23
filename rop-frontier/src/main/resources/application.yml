@@ -1,0 +1,93 @@
+server:
+  port: 8099
+
+spring:
+  application:
+    name: ROP-FRONTIER
+  redis:
+    database: 0
+    host: redis.default
+    jedis:
+      pool:
+        max-active: 100
+        max-wait: 2000
+        max-idle: 500
+        min-idle: 8
+    timeout: 5000
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://eureka-service.${spring.profiles.active}:8761/eureka
+
+
+ribbon:
+  eureka:
+    enabled: true
+  ReadTimeout: 60000
+  ConnectTimeout: 60000
+
+graphql:
+  servlet:
+    mapping: /graphql
+    enabled: true
+    corsEnabled: true
+    exception-handlers-enabled: true
+
+seaboxdata:
+  core:
+    idgenerator:
+      hostname:
+      #mode: cloud
+      mode: snowflake
+      datacenter: 1
+      worker: 1
+  auth:
+    hostname:
+    url: http://AUTH-SERVER
+  rsp:
+    hostname:
+  workflow:
+    hostname:
+
+auth-server-url: http://AUTH-SERVICE.${spring.profiles.active}:8080
+security:
+  oauth2:
+    client:
+      client-id: testclientid
+      client-secret: 123456
+      scope: read_userinfo
+      access-token-uri: ${auth-server-url}/oauth/token
+      user-authorization-uri: ${auth-server-url}/oauth/authorize
+    resource:
+      check-token: ${auth-server-url}/oauth/check_token
+      token-info-uri: ${auth-server-url}/oauth/check_token
+
+cookie:
+  access-cookie-time: 86400
+token:
+  domain: jinxin.cloud
+  access-token:
+    expiration-time: 600 # 86400 # 60 * 60 * 12 * 2
+  refresh-token:
+    expiration-time: 2592000 # 60 * 60 * 12 * 2 * 30
+
+rocketmq:
+  name-server: rocketmq-nameserver.default:9876
+  producer:
+    send-message-timeout: 3000
+    group: all-froniter
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+ambry:
+  host: ambry-client.default
+  port: 1174
+  temp-path: /tmp/
+  ttl: 10800
+

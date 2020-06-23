@@ -1,0 +1,50 @@
+##################################################
+#
+#   应用类型
+#
+##################################################
+extend type Query {
+    # 分页查询应用类型 #
+    applicationTypeList(input:ApplicationTypePageInput):NrdApplicationTypePagination
+
+    applicationTypeAll(input:ApplicationTypeInput):[ApplicationTypeVo]
+
+    applicationTypeDetail(appTypeId:ID):ApplicationTypeVo
+}
+
+extend type Mutation {
+    applicationTypeSave(input:ApplicationTypeInput):Boolean
+
+    applicationTypeUpdate(input:ApplicationTypeInput):Boolean
+
+    applicationTypeDelete(ids:[ID]):Boolean
+}
+
+#请求参数
+input ApplicationTypeInput {
+    appTypeId:ID #主键
+    superAppTypeId:Int #上层id
+    appTypeName:String #应用类型名称
+}
+
+#分页请求参数
+input ApplicationTypePageInput {
+    offset: Int! # 跳过前offset条数据
+    limit: Int! # 读取limit条数据
+    keyword:String #关键字
+}
+
+#分页展示应用类型
+type NrdApplicationTypePagination {
+    total:Int #总页数
+    offset:Int #第几页
+    limit:Int #页数量
+    data:[ApplicationTypeVo] #应用类型数据
+}
+
+#y应用类别详情
+type ApplicationTypeVo {
+    appTypeId:ID #主键
+    superAppTypeId:Int #上层id
+    appTypeName:String #应用类型名称
+}

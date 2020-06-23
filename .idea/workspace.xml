@@ -1,0 +1,926 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="77c296a5-b422-469c-863a-1c59f786f2f5" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/rop-service/target/" />
+    <ignored path="$PROJECT_DIR$/rop-api/target/" />
+    <ignored path="$PROJECT_DIR$/rop-frontier/target/" />
+    <ignored path="$PROJECT_DIR$/demo/target/" />
+    <ignored path="$PROJECT_DIR$/dfjinxin-generator/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rop-frontier/src/main/java/com/seaboxdata/rop/resolver/ApplicationTypeResolver.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="50">
+              <caret line="30" column="49" selection-start-line="30" selection-start-column="49" selection-end-line="30" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rop-frontier/src/main/resources/graphql/ApplicationType.graphqls">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="50">
+              <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rop-service/src/main/java/com/seaboxdata/rop/controller/ApplicationTypeController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="14" column="2" lean-forward="true" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rop-service/src/main/java/com/seaboxdata/rop/controller/UserMessageController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="53">
+              <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/rop-service/src/main/java/com/seaboxdata/rop/mapper/ApplicationTypeMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rop-service/src/main/java/com/seaboxdata/rop/mapper/UserMessageMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rop-frontier/src/main/java/com/seaboxdata/rop/RopFrontierApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="343">
+              <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="28" selection-end-column="7" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#619#620#0" expanded="true" />
+                <element signature="e#692#693#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dfjinxin-generator/src/main/resources/template/IController.java.vm">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="11" column="22" lean-forward="true" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>ResourceServerConfigurerAdapter</find>
+      <find>UserMapStruct</find>
+      <find>className</find>
+      <find>RequestBody</find>
+      <find>PathVariable</find>
+      <find>spring-boot-starter-actuator</find>
+      <find>UserInfoPageInput</find>
+      <find>userFeedbackAttachPage</find>
+      <find>UserFeedbackAttachPageInput</find>
+      <find>Dto</find>
+      <find>dto</find>
+      <find>spring-security</find>
+      <find>3.2.</find>
+      <find>security</find>
+      <find>${moduleName}</find>
+      <find>.${moduleName}</find>
+      <find>.api</find>
+      <find>.frontier</find>
+      <find>project</find>
+      <find>classname</find>
+      <find>getFileName</find>
+      <find>nrdPersonalInfoService</find>
+      <find>api</find>
+      <find>AccessExceptionConvertor</find>
+      <find>ServiceAccessError</find>
+      <find>rocketmq-spring-boot-starter</find>
+      <find>kotlin</find>
+      <find>BeanUtils</find>
+      <find>Map</find>
+      <find>IApplicationTypeController</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+      <replace>Vo</replace>
+    </replaceStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/rop-frontier/src/main/java/com/seaboxdata/rop/frontier/config/filter/MyBearerTokenExtractor.java" />
+        <option value="$PROJECT_DIR$/rop-frontier/src/main/java/com/seaboxdata/rop/frontier/config/MyAuthenticationEntryPoint.java" />
+        <option value="$PROJECT_DIR$/rop-frontier/src/main/java/com/seaboxdata/rop/frontier/config/RedisConfig.java" />
+        <option value="$PROJECT_DIR$/rop-frontier/src/main/java/com/seaboxdata/rop/frontier/config/RefreshTokenHandle.java" />
+        <option value="$PROJECT_DIR$/rop-frontier/src/main/java/com/seaboxdata/rop/frontier/config/RemoteTokenService.java" />
+        <option value="$PROJECT_DIR$/rop-frontier/src/main/java/com/seaboxdata/rop/frontier/config/ResourceServerConfiguration.java" />
+        <option value="$PROJECT_DIR$/rop-frontier/src/main/java/com/seaboxdata/rop/frontier/config/SecurityGraphqlContextBuilder.java" />
+        <option value="$PROJECT_DIR$/rop-frontier/src/main/java/com/seaboxdata/rop/frontier/config/GlobalCorsConfig.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/rop-api/pom.xml" />
+        <option value="$PROJECT_DIR$/dfjinxin-generator/src/main/resources/template/Input.java.vm" />
+        <option value="$PROJECT_DIR$/rop-frontier/src/main/java/com/seaboxdata/rop/config/LockService.java" />
+        <option value="$PROJECT_DIR$/rop-frontier/src/main/java/com/seaboxdata/rop/service/NrdPersonalInfoService.java" />
+        <option value="$PROJECT_DIR$/rop-frontier/src/main/java/com/seaboxdata/rop/service/impl/NrdPersonalInfoServiceImpl.java" />
+        <option value="$PROJECT_DIR$/rop-frontier/src/main/java/com/seaboxdata/rop/resolver/PersonalInfoResolver.java" />
+        <option value="$PROJECT_DIR$/rop-frontier/src/main/java/com/seaboxdata/rop/service/NrdInfoResFieldService.java" />
+        <option value="$PROJECT_DIR$/rop-frontier/src/main/java/com/seaboxdata/rop/resolver/InfoResFieldResolver.java" />
+        <option value="$PROJECT_DIR$/dfjinxin-generator/src/main/resources/template/Pagination.java.vm" />
+        <option value="$PROJECT_DIR$/rop-frontier/src/main/java/com/seaboxdata/rop/response/NrdInfoResFieldPagination.java" />
+        <option value="$PROJECT_DIR$/rop-frontier/src/main/java/com/seaboxdata/rop/resolver/CorpInfoResolver.java" />
+        <option value="$PROJECT_DIR$/dfjinxin-generator/src/main/resources/generator.properties" />
+        <option value="$PROJECT_DIR$/dfjinxin-generator/src/main/resources/template/Controller.java.vm" />
+        <option value="$PROJECT_DIR$/rop-service/src/main/java/com/seaboxdata/rop/RopServiceApplication.java" />
+        <option value="$PROJECT_DIR$/rop-service/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/rop-service/src/main/resources/application-ccf.yml" />
+        <option value="$PROJECT_DIR$/rop-frontier/src/main/resources/application-ccf.yml" />
+        <option value="$PROJECT_DIR$/rop-frontier/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/rop-frontier/src/main/java/com/seaboxdata/rop/config/RefreshTokenHandle.java" />
+        <option value="$PROJECT_DIR$/rop-frontier/src/main/java/com/seaboxdata/rop/config/RemoteTokenService.java" />
+        <option value="$PROJECT_DIR$/rop-frontier/src/main/java/com/seaboxdata/rop/config/ResourceServerConfiguration.java" />
+        <option value="$PROJECT_DIR$/rop-frontier/src/main/java/com/seaboxdata/rop/config/MyAuthenticationEntryPoint.java" />
+        <option value="$PROJECT_DIR$/rop-frontier/src/main/java/com/seaboxdata/rop/config/filter/AuthSecurityContextFilter.java" />
+        <option value="$PROJECT_DIR$/rop-frontier/src/main/java/com/seaboxdata/rop/config/utlis/RedisUtil.java" />
+        <option value="$PROJECT_DIR$/rop-frontier/src/main/java/com/seaboxdata/rop/config/filter/FeignOauth2RequestInterceptor.java" />
+        <option value="$PROJECT_DIR$/rop-service/pom.xml" />
+        <option value="$PROJECT_DIR$/dfjinxin-generator/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/rop-frontier/src/main/java/com/seaboxdata/rop/resolver/ApplicationTypeResolver.java" />
+        <option value="$PROJECT_DIR$/dfjinxin-generator/src/main/resources/template/NrdService.java.vm" />
+        <option value="$PROJECT_DIR$/dfjinxin-generator/src/main/resources/template/Resolver.java.vm" />
+        <option value="$PROJECT_DIR$/dfjinxin-generator/src/main/java/io/dfjinxin/utils/GenUtils.java" />
+        <option value="$PROJECT_DIR$/rop-frontier/src/main/java/com/seaboxdata/rop/service/impl/NrdUserMessageServiceImpl.java" />
+        <option value="$PROJECT_DIR$/dfjinxin-generator/src/main/resources/template/NrdServiceImpl.java.vm" />
+        <option value="$PROJECT_DIR$/dfjinxin-generator/src/main/resources/template/ServiceImpl.java.vm" />
+        <option value="$PROJECT_DIR$/rop-frontier/pom.xml" />
+        <option value="$PROJECT_DIR$/rop-api/src/main/java/com/seaboxdata/rop/input/ApplicationTypePageInput.java" />
+        <option value="$PROJECT_DIR$/dfjinxin-generator/src/main/resources/template/PageInput.java.vm" />
+        <option value="$PROJECT_DIR$/rop-frontier/src/main/resources/graphql/UserMessage.graphqls" />
+        <option value="$PROJECT_DIR$/rop-frontier/src/main/resources/graphql/ApplicationType.graphqls" />
+        <option value="$PROJECT_DIR$/dfjinxin-generator/src/main/resources/template/graphql.graphqls.vm" />
+        <option value="$PROJECT_DIR$/rop-frontier/src/main/java/com/seaboxdata/rop/RopFrontierApplication.java" />
+        <option value="$PROJECT_DIR$/rop-service/src/main/java/com/seaboxdata/rop/controller/ApplicationTypeController.java" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="rop-api" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="rop-api" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="rop-api" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1366" />
+    <option name="height" value="735" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/rop-frontier/src/main/resources/graphql" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.seaboxdata.rop.service" />
+      <recent name="com.seaboxdata.rop.api.vo" />
+      <recent name="com.seaboxdata.rop.api.input" />
+      <recent name="com.seaboxdata.rop.api.controller" />
+      <recent name="com.seaboxdata.rop.api.dto" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\workspace\chongqing\rop-server\rop-frontier\src\main\resources\graphql" />
+      <recent name="D:\workspace\chongqing\rop-server\dfjinxin-generator\src\main\resources\template" />
+      <recent name="D:\workspace\chongqing\rop-server\rop-service\src\main\resources" />
+      <recent name="D:\workspace\chongqing\rop-server\rop-frontier\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.RopServiceApplication">
+    <configuration name="DfjinxinGerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="dfjinxin-generator" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="io.dfjinxin.DfjinxinGerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RopFrontierApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="rop-frontier" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.seaboxdata.rop.RopFrontierApplication" />
+      <option name="ACTIVE_PROFILES" value="ccf" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RopServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="rop-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.seaboxdata.rop.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.seaboxdata.rop.RopServiceApplication" />
+      <option name="ACTIVE_PROFILES" value="ccf" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RopServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="rop-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.seaboxdata.rop.RopServiceApplication" />
+      <option name="ACTIVE_PROFILES" value="ccf" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="UPDATE_ACTION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Spring Boot.DfjinxinGerApplication" />
+      <item itemvalue="Spring Boot.RopFrontierApplication" />
+      <item itemvalue="Spring Boot.RopServiceApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.RopServiceApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="77c296a5-b422-469c-863a-1c59f786f2f5" name="Default Changelist" comment="" />
+      <created>1592556664861</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1592556664861</updated>
+      <workItem from="1592556667879" duration="30503000" />
+      <workItem from="1592805403705" duration="4909000" />
+      <workItem from="1592836704953" duration="14583000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="49995000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1310" height="784" extended-state="6" />
+    <layout>
+      <window_info id="Image Layers" order="0" />
+      <window_info id="UI Designer" order="1" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Alibaba Cloud Explorer" order="3" sideWeight="0.50079745" side_tool="true" weight="0.2489992" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info id="Web" order="5" side_tool="true" />
+      <window_info id="Designer" order="6" />
+      <window_info active="true" content_ui="combo" id="Project" order="7" sideWeight="0.49920255" visible="true" weight="0.292" />
+      <window_info id="Structure" order="8" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" order="0" weight="0.32854864" />
+      <window_info anchor="bottom" id="GraphQL" order="1" />
+      <window_info anchor="bottom" id="Terminal" order="2" weight="0.3939394" />
+      <window_info anchor="bottom" id="Sequence" order="3" />
+      <window_info anchor="bottom" id="Docker" order="4" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Java Enterprise" order="6" />
+      <window_info anchor="bottom" id="Database Changes" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Alibaba Cloud View" order="9" />
+      <window_info anchor="bottom" id="MyBatis Log" order="10" />
+      <window_info anchor="bottom" id="Spring" order="11" weight="0.32854864" />
+      <window_info anchor="bottom" id="Message" order="12" />
+      <window_info anchor="bottom" id="Find" order="13" weight="0.32854864" />
+      <window_info anchor="bottom" id="Run" order="14" weight="0.54704946" />
+      <window_info anchor="bottom" id="Debug" order="15" weight="0.6634769" />
+      <window_info anchor="bottom" id="Cvs" order="16" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="17" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="18" />
+      <window_info anchor="right" id="Bean Validation" order="0" />
+      <window_info anchor="right" id="Palette" order="1" />
+      <window_info anchor="right" id="Capture Analysis" order="2" />
+      <window_info anchor="right" id="Alibaba Function Compute" order="3" />
+      <window_info anchor="right" id="Database" order="4" weight="0.3296" />
+      <window_info anchor="right" id="Palette&#9;" order="5" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="right" id="Alibaba Log Console" order="7" />
+      <window_info anchor="right" id="Maven" order="8" weight="0.3296" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="9" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="10" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="11" weight="0.25" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Image Layers" order="0" />
+      <window_info id="UI Designer" order="1" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Alibaba Cloud Explorer" order="3" sideWeight="0.50079745" side_tool="true" weight="0.2489992" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info id="Web" order="5" side_tool="true" />
+      <window_info id="Designer" order="6" />
+      <window_info active="true" content_ui="combo" id="Project" order="7" sideWeight="0.49920255" visible="true" weight="0.292" />
+      <window_info id="Structure" order="8" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" order="0" weight="0.32854864" />
+      <window_info anchor="bottom" id="GraphQL" order="1" />
+      <window_info anchor="bottom" id="Terminal" order="2" weight="0.3939394" />
+      <window_info anchor="bottom" id="Sequence" order="3" />
+      <window_info anchor="bottom" id="Docker" order="4" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Java Enterprise" order="6" />
+      <window_info anchor="bottom" id="Database Changes" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Alibaba Cloud View" order="9" />
+      <window_info anchor="bottom" id="MyBatis Log" order="10" />
+      <window_info anchor="bottom" id="Spring" order="11" weight="0.32854864" />
+      <window_info anchor="bottom" id="Message" order="12" />
+      <window_info anchor="bottom" id="Find" order="13" weight="0.32854864" />
+      <window_info anchor="bottom" id="Run" order="14" weight="0.54704946" />
+      <window_info anchor="bottom" id="Debug" order="15" weight="0.67783093" />
+      <window_info anchor="bottom" id="Cvs" order="16" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="17" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="18" />
+      <window_info anchor="right" id="Bean Validation" order="0" />
+      <window_info anchor="right" id="Palette" order="1" />
+      <window_info anchor="right" id="Capture Analysis" order="2" />
+      <window_info anchor="right" id="Alibaba Function Compute" order="3" />
+      <window_info anchor="right" id="Database" order="4" weight="0.3296" />
+      <window_info anchor="right" id="Palette&#9;" order="5" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="right" id="Alibaba Log Console" order="7" />
+      <window_info anchor="right" id="Maven" order="8" weight="0.3296" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="9" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="10" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="11" weight="0.25" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/rop-service/src/main/java/com/seaboxdata/rop/service/NrdApplicationTypeService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rop-service/src/main/java/com/seaboxdata/rop/model/ApplicationType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dfjinxin-generator/src/main/resources/template/Vo.java.vm">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rop-frontier/src/main/java/com/seaboxdata/rop/response/NrdApplicationTypePagination.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="17" column="41" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dfjinxin-generator/src/main/resources/template/NrdService.java.vm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="53" selection-start-line="4" selection-start-column="53" selection-end-line="4" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dfjinxin-generator/src/main/resources/template/Resolver.java.vm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="35" column="9" lean-forward="true" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dfjinxin-generator/src/main/resources/template/menu.sql.vm">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dfjinxin-generator/src/main/resources/template/Mapper.java.vm">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dfjinxin-generator/src/main/resources/template/Input.java.vm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dfjinxin-generator/src/main/resources/template/index.vue.vm">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dfjinxin-generator/src/main/resources/template/Entity.java.vm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="27" selection-start-line="27" selection-end-line="36" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rop-frontier/src/main/java/com/seaboxdata/rop/service/IUserMessageService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rop-frontier/src/main/java/com/seaboxdata/rop/service/impl/UserMessageServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dfjinxin-generator/src/main/java/io/dfjinxin/utils/DateUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rop-api/src/main/java/com/seaboxdata/rop/controller/IUserMessageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rop-api/src/main/java/com/seaboxdata/rop/controller/UserMessageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dfjinxin-generator/src/main/java/io/dfjinxin/utils/GenUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1014">
+          <caret line="75" column="66" lean-forward="true" selection-start-line="75" selection-start-column="66" selection-end-line="75" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/seaboxdata/commons/commons-graphql/1.0.0-SNAPSHOT/commons-graphql-1.0.0-SNAPSHOT.jar!/com/seaboxdata/commons/graphql/SeaboxDataGraphQLAutoConfiguration.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="39" column="52" selection-start-line="39" selection-start-column="52" selection-end-line="39" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rop-service/src/main/java/com/seaboxdata/rop/controller/IUserMessageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rop-service/src/main/java/com/seaboxdata/rop/service/impl/NrdUserMessageServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rop-service/src/main/java/com/seaboxdata/rop/service/NrdUserMessageService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rop-service/src/main/java/com/seaboxdata/rop/service/impl/UserMessageServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="21" lean-forward="true" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.1.6.RELEASE/spring-beans-5.1.6.RELEASE.jar!/org/springframework/beans/BeanUtils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="43" column="24" lean-forward="true" selection-start-line="43" selection-start-column="24" selection-end-line="43" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#19410#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rop-service/src/main/java/com/seaboxdata/rop/service/impl/ApplicationTypeServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1170">
+          <caret line="65" column="14" lean-forward="true" selection-start-line="65" selection-start-column="14" selection-end-line="65" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dfjinxin-generator/src/main/resources/template/NrdServiceImpl.java.vm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dfjinxin-generator/src/main/resources/template/ServiceImpl.java.vm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dfjinxin-generator/src/main/resources/template/Service.java.vm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-89" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rop-frontier/src/main/java/com/seaboxdata/rop/service/impl/NrdApplicationTypeServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="24" column="52" lean-forward="true" selection-start-line="24" selection-start-column="52" selection-end-line="24" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dfjinxin-generator/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rop-service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rop-frontier/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="41" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dfjinxin-generator/src/main/resources/template/Pagination.java.vm">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dfjinxin-generator/src/main/resources/template/PageInput.java.vm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="25" column="12" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rop-api/src/main/java/com/seaboxdata/rop/input/ApplicationTypeInput.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="457">
+          <caret line="34" column="30" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rop-api/src/main/java/com/seaboxdata/rop/input/UserMessagePageInput.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="21" column="26" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rop-api/src/main/java/com/seaboxdata/rop/input/UserMessageInput.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-323">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/seaboxdata/commons/commons-core/1.0.0-SNAPSHOT/commons-core-1.0.0-SNAPSHOT.jar!/com/seaboxdata/commons/query/PaginationQueryInput.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rop-api/src/main/java/com/seaboxdata/rop/input/ApplicationTypePageInput.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="18" column="56" lean-forward="true" selection-start-line="18" selection-start-column="56" selection-end-line="18" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dfjinxin-generator/src/main/resources/template/graphql.graphqls.vm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="20" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="20" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rop-frontier/src/main/resources/graphql/UserMessage.graphqls">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-190">
+          <caret line="25" column="27" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rop-frontier/src/main/java/com/seaboxdata/rop/service/NrdUserMessageService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rop-frontier/src/main/java/com/seaboxdata/rop/service/impl/NrdUserMessageServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rop-frontier/src/main/java/com/seaboxdata/rop/resolver/UserMessageResolver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-269">
+          <caret line="30" column="79" selection-start-line="30" selection-start-column="59" selection-end-line="30" selection-end-column="79" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rop-frontier/src/main/java/com/seaboxdata/rop/RopFrontierApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="28" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#619#620#0" expanded="true" />
+            <element signature="e#692#693#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rop-frontier/src/main/java/com/seaboxdata/rop/resolver/ApplicationTypeResolver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="30" column="49" selection-start-line="30" selection-start-column="49" selection-end-line="30" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rop-frontier/src/main/resources/graphql/ApplicationType.graphqls">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dfjinxin-generator/src/main/resources/template/IController.java.vm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="22" lean-forward="true" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rop-service/src/main/java/com/seaboxdata/rop/controller/ApplicationTypeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="2" lean-forward="true" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rop-service/src/main/java/com/seaboxdata/rop/controller/UserMessageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="53">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rop-service/src/main/java/com/seaboxdata/rop/mapper/UserMessageMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rop-service/src/main/java/com/seaboxdata/rop/mapper/ApplicationTypeMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: com.oracle:ojdbc6:11.2.0.3</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
