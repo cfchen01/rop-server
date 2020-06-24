@@ -1,9 +1,9 @@
-package ${package}.${project}.controller;
+package ${package}.${project}.api.controller;
 
 import com.seaboxdata.commons.query.PaginationResult;
-import ${package}.${project}.FeignClientConfig;
-import ${package}.${project}.vo.${className}Vo;
-import ${package}.${project}.input.${className}PageInput;
+import ${package}.${project}.api.FeignClientConfig;
+import ${package}.${project}.api.vo.${className}Vo;
+import ${package}.${project}.api.input.${className}PageInput;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.cloud.openfeign.FeignClientsConfiguration;
@@ -20,19 +20,18 @@ import java.util.List;
  */
 @FeignClient(contextId = "${className}",
         name = FeignClientConfig.NAME, configuration = FeignClientsConfiguration.class)
-@RequestMapping("/${classname}")
 public interface I${className}Controller {
 
     /**
      * 分页
      */
-    @GetMapping("/page")
+    @GetMapping("/${classname}/page")
     PaginationResult<${className}Vo> ${classname}Page(@RequestBody ${className}PageInput ${classname}PageInput);
 
     /**
      * 列表
      */
-    @GetMapping("/list")
+    @GetMapping("/${classname}/list")
     List<${className}Vo> ${classname}List(@RequestBody ${className}Vo ${classname}Vo);
 
 
@@ -40,27 +39,27 @@ public interface I${className}Controller {
     /**
      * 详细信息
      */
-    @GetMapping("/details/{${pk.attrname}}")
+    @GetMapping("/${classname}/details/{${pk.attrname}}")
     ${className}Vo ${classname}Detail(@PathVariable("${pk.attrname}") ${pk.attrType} ${pk.attrname});
 #end
 
     /**
      * 保存
      */
-    @PostMapping("/save")
+    @PostMapping("/${classname}/save")
     Boolean ${classname}Save(@RequestBody ${className}Vo ${classname}Vo);
 
     /**
      * 修改
      */
-    @PostMapping("/update")
+    @PostMapping("/${classname}/update")
     Boolean ${classname}Update(@RequestBody ${className}Vo ${classname}Vo);
 
 #if(${pk})
     /**
      * 删除
      */
-    @DeleteMapping("/delete")
+    @DeleteMapping("/${classname}/delete")
     Boolean ${classname}Delete(@RequestBody ${pk.attrType}[] ${pk.attrname}s);
 #end
 

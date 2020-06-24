@@ -1,9 +1,9 @@
-package ${package}.${project}.controller;
+package ${package}.${project}.api.controller;
 
 import com.seaboxdata.commons.query.PaginationResult;
-import ${package}.${project}.FeignClientConfig;
-import ${package}.${project}.vo.${className}Vo;
-import ${package}.${project}.input.${className}PageInput;
+import ${package}.${project}.api.FeignClientConfig;
+import ${package}.${project}.api.vo.${className}Vo;
+import ${package}.${project}.api.input.${className}PageInput;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.cloud.openfeign.FeignClientsConfiguration;
@@ -26,14 +26,12 @@ public interface I${className}Controller {
     /**
      * 分页
      */
-    @ApiOperation(value = "${comments}分页列表")
     @GetMapping("/page")
     PaginationResult<${className}Vo> ${classname}Page(@RequestBody ${className}PageInput ${classname}PageInput);
 
     /**
      * 列表
      */
-    @ApiOperation(value = "${comments}列表")
     @GetMapping("/list")
     List<${className}Vo> ${classname}List(@RequestBody ${className}Vo ${classname}Vo);
 
@@ -42,7 +40,6 @@ public interface I${className}Controller {
     /**
      * 详细信息
      */
-    @ApiOperation(value = "${comments}详细信息")
     @GetMapping("/details/{${pk.attrname}}")
     ${className}Vo ${classname}Detail(@PathVariable("${pk.attrname}") ${pk.attrType} ${pk.attrname});
 #end
@@ -50,14 +47,12 @@ public interface I${className}Controller {
     /**
      * 保存
      */
-    @ApiOperation(value = "${comments}保存")
     @PostMapping("/save")
     Boolean ${classname}Save(@RequestBody ${className}Vo ${classname}Vo);
 
     /**
      * 修改
      */
-    @ApiOperation(value = "${comments}修改")
     @PostMapping("/update")
     Boolean ${classname}Update(@RequestBody ${className}Vo ${classname}Vo);
 
@@ -65,7 +60,6 @@ public interface I${className}Controller {
     /**
      * 删除
      */
-    @ApiOperation(value = "${comments}删除")
     @DeleteMapping("/delete")
     Boolean ${classname}Delete(@RequestBody ${pk.attrType}[] ${pk.attrname}s);
 #end

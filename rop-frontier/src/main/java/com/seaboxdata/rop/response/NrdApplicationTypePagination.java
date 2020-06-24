@@ -1,7 +1,7 @@
 package com.seaboxdata.rop.response;
 
 import com.seaboxdata.commons.query.PaginationResult;
-import com.seaboxdata.rop.vo.ApplicationTypeVo;
+import com.seaboxdata.rop.api.vo.ApplicationTypeVo;
 
 import lombok.Data;
 
@@ -12,7 +12,7 @@ import java.io.Serializable;
  *
  * @author ccf
  * @email 674441755@qq.com
- * @date 2020-06-23 14:31:50
+ * @date 2020-06-24 14:51:29
  */
 @Data
 public class NrdApplicationTypePagination extends PaginationResult<ApplicationTypeVo> implements Serializable {

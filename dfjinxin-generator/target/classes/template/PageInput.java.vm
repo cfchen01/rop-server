@@ -1,4 +1,4 @@
-package ${package}.${project}.input;
+package ${package}.${project}.api.input;
 
 import com.seaboxdata.commons.query.PaginationQueryInput;
 import lombok.Data;
@@ -22,5 +22,8 @@ import java.util.Date;
 public class ${className}PageInput extends PaginationQueryInput {
 	private static final long serialVersionUID = 1L;
 
+	/**
+	*  查询关键字
+	*/
 	private String keyword;
 }

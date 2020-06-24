@@ -4,30 +4,37 @@
 #
 ##################################################
 extend type Query {
-    # 分页查询应用类型 #
-    ${className}List(input:${className}PageInput):Nrd${className}Pagination
-
-    ${className}All(vo:${className}Vo):[${className}Vo]
-
+    # 分页查询 #
+    ${classname}List(input:${className}PageInput):Nrd${className}Pagination
+    # 查询全部 #
+    ${classname}All(input:${className}Input):[${className}Vo]
 #if(${pk})
-    ${className}Detail(${pk.attrname}:ID):${className}Vo
+    # 查询详细 #
+    ${classname}Detail(${pk.attrname}:ID):${className}Vo
 #end
 }
 
 extend type Mutation {
-    ${className}Save(input:${className}Input):Boolean
+    ${classname}Save(input:${className}Input):Boolean
 
-    ${className}Update(input:${className}Input):Boolean
+    ${classname}Update(input:${className}Input):Boolean
 
 #if(${pk})
-    ${className}Delete(ids:[ID]):Boolean
+    ${classname}Delete(ids:[ID]):Boolean
 #end
 }
 
 #请求参数
 input ${className}Input {
-    offset: Int! # 跳过前offset条数据
-    limit: Int! # 读取limit条数据
+#foreach ($column in $columns)
+#if($column.columnName == $pk.columnName)
+    $column.attrname:ID #$column.comments
+#elseif($column.attrType == 'Integer')
+    $column.attrname:Int #$column.comments
+#else
+    $column.attrname:$column.attrType #$column.comments
+#end
+#end
 }
 
 #分页请求参数
@@ -42,7 +49,7 @@ type Nrd${className}Pagination {
     total:Int #总页数
     offset:Int #第几页
     limit:Int #页数量
-    data:[${className}Vo] #应用类型数据
+    data:[${className}Vo] #数据列表
 }
 
 #y应用类别详情
@@ -51,8 +58,7 @@ type ${className}Vo {
 #foreach ($column in $columns)
 #if($column.columnName == $pk.columnName)
     $column.attrname:ID #$column.comments
-#end
-#if($column.attrType == 'Integer')
+#elseif($column.attrType == 'Integer')
     $column.attrname:Int #$column.comments
 #else
     $column.attrname:$column.attrType #$column.comments

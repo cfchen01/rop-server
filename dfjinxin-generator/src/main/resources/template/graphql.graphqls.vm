@@ -5,22 +5,22 @@
 ##################################################
 extend type Query {
     # 分页查询 #
-    ${className}List(input:${className}PageInput):Nrd${className}Pagination
+    ${classname}List(input:${className}PageInput):Nrd${className}Pagination
     # 查询全部 #
-    ${className}All(input:${className}Input):[${className}Vo]
+    ${classname}All(input:${className}Input):[${className}Vo]
 #if(${pk})
     # 查询详细 #
-    ${className}Detail(${pk.attrname}:ID):${className}Vo
+    ${classname}Detail(${pk.attrname}:ID):${className}Vo
 #end
 }
 
 extend type Mutation {
-    ${className}Save(input:${className}Input):Boolean
+    ${classname}Save(input:${className}Input):Boolean
 
-    ${className}Update(input:${className}Input):Boolean
+    ${classname}Update(input:${className}Input):Boolean
 
 #if(${pk})
-    ${className}Delete(ids:[ID]):Boolean
+    ${classname}Delete(ids:[ID]):Boolean
 #end
 }
 
@@ -29,8 +29,7 @@ input ${className}Input {
 #foreach ($column in $columns)
 #if($column.columnName == $pk.columnName)
     $column.attrname:ID #$column.comments
-#end
-#if($column.attrType == 'Integer')
+#elseif($column.attrType == 'Integer')
     $column.attrname:Int #$column.comments
 #else
     $column.attrname:$column.attrType #$column.comments
@@ -59,8 +58,7 @@ type ${className}Vo {
 #foreach ($column in $columns)
 #if($column.columnName == $pk.columnName)
     $column.attrname:ID #$column.comments
-#end
-#if($column.attrType == 'Integer')
+#elseif($column.attrType == 'Integer')
     $column.attrname:Int #$column.comments
 #else
     $column.attrname:$column.attrType #$column.comments

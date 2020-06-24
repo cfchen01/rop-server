@@ -1,4 +1,4 @@
-package ${package}.${project}.input;
+package ${package}.${project}.api.input;
 
 import com.seaboxdata.commons.query.PaginationQueryInput;
 import lombok.Data;

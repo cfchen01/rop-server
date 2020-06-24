@@ -1,9 +1,9 @@
 package ${package}.${project}.service;
 
 import com.seaboxdata.commons.query.PaginationResult;
-import ${package}.${project}.vo.${className}Vo;
-import ${package}.${project}.input.${className}Input;
-import ${package}.${project}.input.${className}PageInput;
+import ${package}.${project}.api.vo.${className}Vo;
+import ${package}.${project}.api.input.${className}Input;
+import ${package}.${project}.api.input.${className}PageInput;
 
 import java.util.List;
 

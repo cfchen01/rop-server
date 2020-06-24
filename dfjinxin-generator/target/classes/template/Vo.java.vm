@@ -1,4 +1,4 @@
-package ${package}.${project}.vo;
+package ${package}.${project}.api.vo;
 
 import lombok.Data;
 import lombok.experimental.Accessors;

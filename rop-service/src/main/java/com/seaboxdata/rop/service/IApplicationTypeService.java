@@ -2,8 +2,8 @@ package com.seaboxdata.rop.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.seaboxdata.commons.query.PaginationResult;
-import com.seaboxdata.rop.vo.ApplicationTypeVo;
-import com.seaboxdata.rop.input.ApplicationTypePageInput;
+import com.seaboxdata.rop.api.vo.ApplicationTypeVo;
+import com.seaboxdata.rop.api.input.ApplicationTypePageInput;
 import com.seaboxdata.rop.model.ApplicationType;
 
 import java.util.List;
@@ -13,7 +13,7 @@ import java.util.List;
  *
  * @author ccf
  * @email 674441755@qq.com
- * @date 2020-06-23 14:31:50
+ * @date 2020-06-24 14:51:29
  */
 public interface IApplicationTypeService extends IService<ApplicationType> {
 

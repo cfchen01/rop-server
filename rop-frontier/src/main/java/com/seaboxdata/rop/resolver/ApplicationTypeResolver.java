@@ -3,8 +3,9 @@ package com.seaboxdata.rop.resolver;
 import com.coxautodev.graphql.tools.GraphQLMutationResolver;
 import com.coxautodev.graphql.tools.GraphQLQueryResolver;
 import com.seaboxdata.commons.query.PaginationResult;
-import com.seaboxdata.rop.vo.ApplicationTypeVo;
-import com.seaboxdata.rop.input.ApplicationTypePageInput;
+import com.seaboxdata.rop.api.vo.ApplicationTypeVo;
+import com.seaboxdata.rop.api.input.ApplicationTypeInput;
+import com.seaboxdata.rop.api.input.ApplicationTypePageInput;
 import com.seaboxdata.rop.service.NrdApplicationTypeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -16,7 +17,7 @@ import java.util.List;
  *
  * @author ccf
  * @email 674441755@qq.com
- * @date 2020-06-23 14:31:50
+ * @date 2020-06-24 14:51:29
  */
 @Service
 public class ApplicationTypeResolver implements GraphQLQueryResolver, GraphQLMutationResolver {
@@ -34,8 +35,8 @@ public class ApplicationTypeResolver implements GraphQLQueryResolver, GraphQLMut
     /**
      * 全部
      */
-    public List<ApplicationTypeVo> applicationTypeAll(ApplicationTypeVo applicationTypeVo){
-        return nrdApplicationTypeService.applicationTypeAll(applicationTypeVo);
+    public List<ApplicationTypeVo> applicationTypeAll(ApplicationTypeInput applicationTypeInput){
+        return nrdApplicationTypeService.applicationTypeAll(applicationTypeInput);
     }
 
     /**
@@ -49,15 +50,15 @@ public class ApplicationTypeResolver implements GraphQLQueryResolver, GraphQLMut
     /**
      * 保存
      */
-    public Boolean applicationTypeSave(ApplicationTypeVo applicationTypeVo){
-        return nrdApplicationTypeService.applicationTypeSave(applicationTypeVo);
+    public Boolean applicationTypeSave(ApplicationTypeInput applicationTypeInput){
+        return nrdApplicationTypeService.applicationTypeSave(applicationTypeInput);
     }
 
     /**
      * 修改
      */
-    public Boolean applicationTypeUpdate(ApplicationTypeVo applicationTypeVo){
-        return nrdApplicationTypeService.applicationTypeUpdate(applicationTypeVo);
+    public Boolean applicationTypeUpdate(ApplicationTypeInput applicationTypeInput){
+        return nrdApplicationTypeService.applicationTypeUpdate(applicationTypeInput);
     }
 
     /**

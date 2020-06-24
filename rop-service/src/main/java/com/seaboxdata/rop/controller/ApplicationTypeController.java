@@ -4,8 +4,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RestController;
 import com.seaboxdata.commons.query.PaginationResult;
 import com.seaboxdata.rop.service.IApplicationTypeService;
-import com.seaboxdata.rop.input.ApplicationTypePageInput;
-import com.seaboxdata.rop.vo.ApplicationTypeVo;
+import com.seaboxdata.rop.api.controller.IApplicationTypeController;
+import com.seaboxdata.rop.api.input.ApplicationTypePageInput;
+import com.seaboxdata.rop.api.vo.ApplicationTypeVo;
 
 import java.util.Arrays;
 import java.util.List;
@@ -15,7 +16,7 @@ import java.util.List;
  *
  * @author ccf
  * @email 674441755@qq.com
- * @date 2020-06-23 14:31:50
+ * @date 2020-06-24 14:51:29
  */
 @RestController
 public class ApplicationTypeController implements IApplicationTypeController{

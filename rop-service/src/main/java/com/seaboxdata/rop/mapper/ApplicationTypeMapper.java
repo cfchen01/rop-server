@@ -9,7 +9,7 @@ import org.springframework.stereotype.Repository;
  *
  * @author ccf
  * @email 674441755@qq.com
- * @date 2020-06-23 14:31:50
+ * @date 2020-06-24 14:51:29
  */
 @Repository
 public interface ApplicationTypeMapper extends BaseMapper<ApplicationType> {

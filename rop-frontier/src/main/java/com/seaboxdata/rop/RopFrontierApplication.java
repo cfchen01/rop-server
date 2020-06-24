@@ -21,10 +21,10 @@ public class RopFrontierApplication {
         SpringApplication.run(RopFrontierApplication.class, args);
     }
 
-//    @Bean
-//    public SchemaParserOptions schemaParserOptions() {
-//        //临时设置，允许graphql不强制所有resolver均提供实现
-//        return SchemaParserOptions.newOptions()
-//                .allowUnimplementedResolvers(true).build();
-//    }
+    @Bean
+    public SchemaParserOptions schemaParserOptions() {
+        //临时设置，允许graphql不强制所有resolver均提供实现
+        return SchemaParserOptions.newOptions()
+                .allowUnimplementedResolvers(true).build();
+    }
 }

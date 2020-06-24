@@ -2,8 +2,8 @@ package ${package}.${project}.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.seaboxdata.commons.query.PaginationResult;
-import ${package}.${project}.vo.${className}Vo;
-import ${package}.${project}.input.${className}PageInput;
+import ${package}.${project}.api.vo.${className}Vo;
+import ${package}.${project}.api.input.${className}PageInput;
 import ${package}.${project}.model.${className};
 
 import java.util.List;

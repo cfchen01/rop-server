@@ -1,14 +1,14 @@
 package ${package}.${project}.service.impl;
 
 import org.springframework.stereotype.Service;
-import java.util.Map;
+import org.springframework.beans.BeanUtils;
 
 import com.seaboxdata.commons.query.PaginationResult;
 import ${package}.${project}.service.Nrd${className}Service;
-import ${package}.${project}.vo.${className}Vo;
-import ${package}.${project}.input.${className}Input;
-import ${package}.${project}.input.${className}PageInput;
-import ${package}.${project}.controller.I${className}Controller;
+import ${package}.${project}.api.vo.${className}Vo;
+import ${package}.${project}.api.input.${className}Input;
+import ${package}.${project}.api.input.${className}PageInput;
+import ${package}.${project}.api.controller.I${className}Controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 

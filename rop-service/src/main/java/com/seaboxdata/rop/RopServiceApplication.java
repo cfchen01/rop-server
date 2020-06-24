@@ -7,8 +7,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 
-@SpringBootApplication(scanBasePackages = "com.seaboxdata.rop")
-@MapperScan(value = "com.seaboxdata.rop.service.mapper", markerInterface = Mapper.class)
+@SpringBootApplication(scanBasePackages = "com.seaboxdata")
+@MapperScan(value = "com.seaboxdata.rop.mapper", markerInterface = Mapper.class)
 @EnableDiscoveryClient
 @EnableFeignClients(basePackages = "com.seaboxdata.rop")
 public class RopServiceApplication {
