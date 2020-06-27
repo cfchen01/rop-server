@@ -1,0 +1,70 @@
+#
+#   数据应用 --
+#
+extend type Query {
+    # 分页查询 #
+    infoResApplicationList(input:InfoResApplicationPageInput):NrdInfoResApplicationPagination
+    # 查询全部 #
+    infoResApplicationAll(input:InfoResApplicationInput):[InfoResApplicationVo]
+    # 查询详细 #
+    infoResApplicationDetail(appId:ID):InfoResApplicationVo
+}
+
+extend type Mutation {
+    infoResApplicationSave(input:InfoResApplicationInput):Boolean
+
+    infoResApplicationUpdate(input:InfoResApplicationInput):Boolean
+
+    infoResApplicationDelete(ids:[ID]):Boolean
+}
+
+#请求参数
+input InfoResApplicationInput {
+    appId:ID #应用标识 --
+    appTypeId:Int #应用分类标识 --
+    appName:String #应用名称 --
+    appType:Int #应用类型 -- 0：Web应用，1：移动应用
+    appBrief:String #应用介绍 --
+    appProvider:String #应用提供方 --
+    appUrl:String #应用链接 --
+    appIconUrl:String #应用图标链接 --
+    submitUserId:Int #提交用户 --
+    authUserId:Int #审核用户 --
+    appSubmitTime:String #应用提交时间 --
+    authTime:String #应用审核时间 --
+    authStatus:Int #应用审核状态 -- 0：未审核，1：审核通过，2：审核拒绝
+}
+
+#分页请求参数
+input InfoResApplicationPageInput {
+    offset: Int! # 跳过前offset条数据
+    limit: Int! # 读取limit条数据
+    appType:Int #应用类型
+    keyword:String #关键字
+}
+
+#分页展示应用类型
+type NrdInfoResApplicationPagination {
+    total:Int #总页数
+    offset:Int #第几页
+    limit:Int #页数量
+    data:[InfoResApplicationVo] #数据列表
+}
+
+#应用类别详情
+type InfoResApplicationVo {
+
+    appId:ID #应用标识 --
+    appTypeId:Int #应用分类标识 --
+    appName:String #应用名称 --
+    appType:Int #应用类型 -- 0：Web应用，1：移动应用
+    appBrief:String #应用介绍 --
+    appProvider:String #应用提供方 --
+    appUrl:String #应用链接 --
+    appIconUrl:String #应用图标链接 --
+    submitUserId:Int #提交用户 --
+    authUserId:Int #审核用户 --
+    appSubmitTime:Date #应用提交时间 --
+    authTime:Date #应用审核时间 --
+    authStatus:Int #应用审核状态 -- 0：未审核，1：审核通过，2：审核拒绝
+}

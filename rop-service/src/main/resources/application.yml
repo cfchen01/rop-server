@@ -7,7 +7,7 @@ seaboxdata:
       mode: snowflake
       datacenter: 1
       worker: 1
-  rsp:
+  rop:
     hostname:
   auth:
     hostname:
@@ -26,6 +26,12 @@ spring:
       maximum-pool-size: 5
       idle-timeout: 10000
       auto-commit: true
+  elasticsearch:
+    rest:
+      uris: localhost:9200
+elasticsearch:
+  hostName: 109.244.99.167
+  rest-port: 30009
 
 eureka:
   instance:

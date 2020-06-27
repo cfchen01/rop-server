@@ -47,7 +47,7 @@ seaboxdata:
   auth:
     hostname:
     url: http://AUTH-SERVER
-  rsp:
+  rop:
     hostname:
   workflow:
     hostname:

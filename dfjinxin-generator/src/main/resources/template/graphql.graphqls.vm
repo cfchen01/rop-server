@@ -31,6 +31,8 @@ input ${className}Input {
     $column.attrname:ID #$column.comments
 #elseif($column.attrType == 'Integer')
     $column.attrname:Int #$column.comments
+#elseif($column.attrType == 'Date')
+    $column.attrname:String #$column.comments
 #else
     $column.attrname:$column.attrType #$column.comments
 #end
@@ -44,7 +46,7 @@ input ${className}PageInput {
     keyword:String #关键字
 }
 
-#分页展示应用类型
+#分页展示数据
 type Nrd${className}Pagination {
     total:Int #总页数
     offset:Int #第几页
@@ -52,7 +54,7 @@ type Nrd${className}Pagination {
     data:[${className}Vo] #数据列表
 }
 
-#y应用类别详情
+#数据详情
 type ${className}Vo {
 
 #foreach ($column in $columns)
