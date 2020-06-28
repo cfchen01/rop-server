@@ -2,34 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="77c296a5-b422-469c-863a-1c59f786f2f5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/rop-api/src/main/java/com/seaboxdata/rop/api/controller/IInfoResApplicationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rop-api/src/main/java/com/seaboxdata/rop/api/input/InfoResApplicationInput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rop-api/src/main/java/com/seaboxdata/rop/api/input/InfoResApplicationPageInput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rop-api/src/main/java/com/seaboxdata/rop/api/vo/InfoResApplicationVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rop-frontier/src/main/java/com/seaboxdata/rop/resolver/InfoResApplicationResolver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rop-frontier/src/main/java/com/seaboxdata/rop/response/NrdInfoResApplicationPagination.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rop-frontier/src/main/java/com/seaboxdata/rop/service/NrdInfoResApplicationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rop-frontier/src/main/java/com/seaboxdata/rop/service/impl/NrdInfoResApplicationServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rop-frontier/src/main/resources/graphql/InfoResApplication.graphqls" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rop-service/src/main/java/com/seaboxdata/rop/config/RedisConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rop-service/src/main/java/com/seaboxdata/rop/controller/InfoResApplicationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rop-service/src/main/java/com/seaboxdata/rop/mapper/InfoResApplicationMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rop-service/src/main/java/com/seaboxdata/rop/model/InfoResApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rop-service/src/main/java/com/seaboxdata/rop/service/IInfoResApplicationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rop-service/src/main/java/com/seaboxdata/rop/service/IResourceEsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rop-service/src/main/java/com/seaboxdata/rop/service/impl/IResourceEsServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rop-service/src/main/java/com/seaboxdata/rop/service/impl/InfoResApplicationServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rop-service/src/main/java/com/seaboxdata/rop/utils/RedisUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dfjinxin-generator/src/main/resources/template/graphql.graphqls.vm" beforeDir="false" afterPath="$PROJECT_DIR$/dfjinxin-generator/src/main/resources/template/graphql.graphqls.vm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dfjinxin-generator/target/classes/template/IController.java.vm" beforeDir="false" afterPath="$PROJECT_DIR$/dfjinxin-generator/target/classes/template/IController.java.vm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rop-frontier/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/rop-frontier/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rop-frontier/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/rop-frontier/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rop-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/rop-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dfjinxin-generator/src/main/resources/template/ServiceImpl.java.vm" beforeDir="false" afterPath="$PROJECT_DIR$/dfjinxin-generator/src/main/resources/template/ServiceImpl.java.vm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rop-service/src/main/java/com/seaboxdata/rop/controller/InfoResApplicationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/rop-service/src/main/java/com/seaboxdata/rop/controller/InfoResApplicationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rop-service/src/main/java/com/seaboxdata/rop/service/impl/IResourceEsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/rop-service/src/main/java/com/seaboxdata/rop/service/impl/ResourceEsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rop-service/src/main/java/com/seaboxdata/rop/service/impl/InfoResApplicationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/rop-service/src/main/java/com/seaboxdata/rop/service/impl/InfoResApplicationServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rop-service/src/main/resources/application-ccf.yml" beforeDir="false" afterPath="$PROJECT_DIR$/rop-service/src/main/resources/application-ccf.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rop-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/rop-service/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rop-service/target/classes/application-ccf.yml" beforeDir="false" afterPath="$PROJECT_DIR$/rop-service/target/classes/application-ccf.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rop-service/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/rop-service/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rop-service/target/classes/com/seaboxdata/rop/controller/InfoResApplicationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/rop-service/target/classes/com/seaboxdata/rop/controller/InfoResApplicationController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rop-service/target/classes/com/seaboxdata/rop/service/impl/ApplicationTypeServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/rop-service/target/classes/com/seaboxdata/rop/service/impl/ApplicationTypeServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rop-service/target/classes/com/seaboxdata/rop/service/impl/IResourceEsServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rop-service/target/classes/com/seaboxdata/rop/service/impl/InfoResApplicationServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/rop-service/target/classes/com/seaboxdata/rop/service/impl/InfoResApplicationServiceImpl.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -69,19 +54,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rop-service/src/main/java/com/seaboxdata/rop/controller/InfoResApplicationController.java">
+        <entry file="file://$PROJECT_DIR$/rop-service/src/main/java/com/seaboxdata/rop/service/impl/ApplicationTypeServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="37" column="37" lean-forward="true" selection-start-line="37" selection-start-column="37" selection-end-line="37" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/rop-service/src/main/java/com/seaboxdata/rop/service/impl/IResourceEsServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="43">
-              <caret line="121" column="35" selection-start-line="121" selection-start-column="35" selection-end-line="121" selection-end-column="35" />
+            <state relative-caret-position="378">
+              <caret line="36" column="85" lean-forward="true" selection-start-line="36" selection-start-column="85" selection-end-line="36" selection-end-column="85" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -89,47 +65,24 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rop-api/src/main/java/com/seaboxdata/rop/api/input/InfoResApplicationPageInput.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/rop-service/src/main/java/com/seaboxdata/rop/utils/RedisUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+            <state relative-caret-position="3618">
+              <caret line="318" column="46" selection-start-line="318" selection-start-column="43" selection-end-line="318" selection-end-column="46" />
+              <folding>
+                <element signature="e#2699#2700#0" expanded="true" />
+                <element signature="e#2733#2734#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rop-api/src/main/java/com/seaboxdata/rop/api/vo/InfoResApplicationVo.java">
+        <entry file="file://$PROJECT_DIR$/rop-frontier/src/main/java/com/seaboxdata/rop/resolver/ApplicationTypeResolver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="91" column="35" lean-forward="true" selection-start-line="91" selection-start-column="35" selection-end-line="91" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rop-frontier/src/main/resources/graphql/InfoResApplication.graphqls">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="61">
-              <caret line="38" column="6" selection-start-line="38" selection-start-column="6" selection-end-line="38" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rop-frontier/src/main/java/com/seaboxdata/rop/service/impl/NrdInfoResApplicationServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="56">
-              <caret line="25" column="93" selection-start-line="25" selection-start-column="93" selection-end-line="25" selection-end-column="93" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rop-service/src/main/resources/application-ccf.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="65">
-              <caret line="45" column="17" lean-forward="true" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="17" />
+            <state relative-caret-position="76">
+              <caret line="55" selection-start-line="55" selection-end-line="55" />
             </state>
           </provider>
         </entry>
@@ -188,8 +141,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/rop-frontier/src/main/java/com/seaboxdata/rop/service/impl/NrdUserMessageServiceImpl.java" />
-        <option value="$PROJECT_DIR$/rop-api/src/main/java/com/seaboxdata/rop/input/ApplicationTypePageInput.java" />
         <option value="$PROJECT_DIR$/rop-frontier/src/main/resources/graphql/UserMessage.graphqls" />
         <option value="$PROJECT_DIR$/rop-service/src/main/java/com/seaboxdata/rop/controller/UserMessageController.java" />
         <option value="$PROJECT_DIR$/rop-api/src/main/java/com/seaboxdata/rop/controller/IUserMessageController.java" />
@@ -211,8 +162,6 @@
         <option value="$PROJECT_DIR$/dfjinxin-generator/src/main/resources/template/Input.java.vm" />
         <option value="$PROJECT_DIR$/dfjinxin-generator/src/main/resources/template/Service.java.vm" />
         <option value="$PROJECT_DIR$/dfjinxin-generator/src/main/resources/template/Vo.java.vm" />
-        <option value="$PROJECT_DIR$/dfjinxin-generator/src/main/resources/template/ServiceImpl.java.vm" />
-        <option value="$PROJECT_DIR$/rop-service/src/main/java/com/seaboxdata/rop/service/impl/ApplicationTypeServiceImpl.java" />
         <option value="$PROJECT_DIR$/rop-frontier/src/main/java/com/seaboxdata/rop/resolver/ApplicationTypeResolver.java" />
         <option value="$PROJECT_DIR$/dfjinxin-generator/src/main/resources/template/Resolver.java.vm" />
         <option value="$PROJECT_DIR$/rop-frontier/src/main/java/com/seaboxdata/rop/RopFrontierApplication.java" />
@@ -227,18 +176,22 @@
         <option value="$PROJECT_DIR$/rop-service/src/main/java/com/seaboxdata/rop/utils/EsUtil.java" />
         <option value="$PROJECT_DIR$/rop-service/src/main/java/com/seaboxdata/rop/config/RedisConfig.java" />
         <option value="$PROJECT_DIR$/rop-service/src/main/java/com/seaboxdata/rop/utils/RedisUtil.java" />
-        <option value="$PROJECT_DIR$/rop-api/src/main/java/com/seaboxdata/rop/api/vo/InfoResApplicationVo.java" />
         <option value="$PROJECT_DIR$/rop-api/src/main/java/com/seaboxdata/rop/api/input/InfoResApplicationPageInput.java" />
         <option value="$PROJECT_DIR$/rop-service/src/main/java/com/seaboxdata/rop/service/IResourceEsService.java" />
         <option value="$PROJECT_DIR$/rop-service/src/main/java/com/seaboxdata/rop/controller/InfoResApplicationController.java" />
         <option value="$PROJECT_DIR$/rop-frontier/src/main/resources/application-ccf.yml" />
         <option value="$PROJECT_DIR$/dfjinxin-generator/src/main/resources/template/graphql.graphqls.vm" />
         <option value="$PROJECT_DIR$/rop-api/src/main/java/com/seaboxdata/rop/api/input/InfoResApplicationInput.java" />
-        <option value="$PROJECT_DIR$/rop-service/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/rop-frontier/src/main/java/com/seaboxdata/rop/service/impl/NrdInfoResApplicationServiceImpl.java" />
-        <option value="$PROJECT_DIR$/rop-service/src/main/resources/application-ccf.yml" />
         <option value="$PROJECT_DIR$/rop-frontier/src/main/resources/graphql/InfoResApplication.graphqls" />
+        <option value="$PROJECT_DIR$/rop-api/src/main/java/com/seaboxdata/rop/api/vo/InfoResApplicationVo.java" />
         <option value="$PROJECT_DIR$/rop-service/src/main/java/com/seaboxdata/rop/service/impl/IResourceEsServiceImpl.java" />
+        <option value="$PROJECT_DIR$/rop-service/src/main/java/com/seaboxdata/rop/service/impl/ResourceEsServiceImpl.java" />
+        <option value="$PROJECT_DIR$/rop-service/src/main/java/com/seaboxdata/rop/service/impl/InfoResApplicationServiceImpl.java" />
+        <option value="$PROJECT_DIR$/dfjinxin-generator/src/main/resources/template/ServiceImpl.java.vm" />
+        <option value="$PROJECT_DIR$/rop-service/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/rop-service/src/main/resources/application-ccf.yml" />
+        <option value="$PROJECT_DIR$/rop-service/src/main/java/com/seaboxdata/rop/service/impl/ApplicationTypeServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -280,7 +233,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -599,11 +552,14 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
+    <property name="MyBatisLogPluginparameters" value="Parameters:" />
+    <property name="MyBatisLogPluginpreparing" value="Preparing:" />
+    <property name="MyBatisLogPluginrunning" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -719,12 +675,13 @@
       <workItem from="1592805403705" duration="4909000" />
       <workItem from="1592836704953" duration="14583000" />
       <workItem from="1592915306452" duration="20699000" />
-      <workItem from="1593242719131" duration="16406000" />
+      <workItem from="1593242719131" duration="17102000" />
+      <workItem from="1593330727572" duration="9551000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87100000" />
+    <option name="totallyTimeSpent" value="97347000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -737,6 +694,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1310" height="784" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Image Layers" order="0" />
       <window_info id="UI Designer" order="1" />
@@ -747,9 +705,9 @@
       <window_info id="Designer" order="6" />
       <window_info content_ui="combo" id="Project" order="7" sideWeight="0.49920255" weight="0.3008" />
       <window_info id="Structure" order="8" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" order="0" weight="0.3258786" />
+      <window_info anchor="bottom" id="Messages" order="0" weight="0.3514377" />
       <window_info anchor="bottom" id="GraphQL" order="1" weight="0.3290735" />
-      <window_info anchor="bottom" id="Terminal" order="2" weight="0.514377" />
+      <window_info anchor="bottom" id="Terminal" order="2" weight="0.5135566" />
       <window_info anchor="bottom" id="Sequence" order="3" />
       <window_info anchor="bottom" id="Docker" order="4" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" />
@@ -757,12 +715,12 @@
       <window_info anchor="bottom" id="Database Changes" order="7" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Alibaba Cloud View" order="9" />
-      <window_info anchor="bottom" id="MyBatis Log" order="10" />
+      <window_info anchor="bottom" id="MyBatis Log" order="10" weight="0.3290735" />
       <window_info anchor="bottom" id="Spring" order="11" weight="0.32854864" />
       <window_info anchor="bottom" id="Message" order="12" />
       <window_info anchor="bottom" id="Find" order="13" weight="0.32854864" />
       <window_info anchor="bottom" id="Run" order="14" weight="0.54632586" />
-      <window_info active="true" anchor="bottom" id="Debug" order="15" visible="true" weight="0.7140575" />
+      <window_info anchor="bottom" id="Debug" order="15" weight="0.62460065" />
       <window_info anchor="bottom" id="Cvs" order="16" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="17" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="18" weight="0.3290735" />
@@ -787,11 +745,11 @@
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info id="Web" order="5" side_tool="true" />
       <window_info id="Designer" order="6" />
-      <window_info content_ui="combo" id="Project" order="7" sideWeight="0.49920255" visible="true" weight="0.3008" />
+      <window_info active="true" content_ui="combo" id="Project" order="7" sideWeight="0.49920255" visible="true" weight="0.3008" />
       <window_info id="Structure" order="8" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" order="0" weight="0.3258786" />
+      <window_info anchor="bottom" id="Messages" order="0" weight="0.3514377" />
       <window_info anchor="bottom" id="GraphQL" order="1" weight="0.3290735" />
-      <window_info anchor="bottom" id="Terminal" order="2" weight="0.514377" />
+      <window_info anchor="bottom" id="Terminal" order="2" weight="0.5135566" />
       <window_info anchor="bottom" id="Sequence" order="3" />
       <window_info anchor="bottom" id="Docker" order="4" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" />
@@ -799,12 +757,12 @@
       <window_info anchor="bottom" id="Database Changes" order="7" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Alibaba Cloud View" order="9" />
-      <window_info anchor="bottom" id="MyBatis Log" order="10" />
+      <window_info anchor="bottom" id="MyBatis Log" order="10" weight="0.3290735" />
       <window_info anchor="bottom" id="Spring" order="11" weight="0.32854864" />
       <window_info anchor="bottom" id="Message" order="12" />
       <window_info anchor="bottom" id="Find" order="13" weight="0.32854864" />
       <window_info anchor="bottom" id="Run" order="14" weight="0.54632586" />
-      <window_info anchor="bottom" id="Debug" order="15" weight="0.7140575" />
+      <window_info anchor="bottom" id="Debug" order="15" weight="0.62460065" />
       <window_info anchor="bottom" id="Cvs" order="16" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="17" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="18" weight="0.3290735" />
@@ -854,7 +812,7 @@
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/rop-service/src/main/java/com/seaboxdata/rop/controller/InfoResApplicationController.java</url>
-          <line>63</line>
+          <line>62</line>
           <properties />
           <option name="timeStamp" value="7" />
         </line-breakpoint>
@@ -870,63 +828,62 @@
           <properties />
           <option name="timeStamp" value="9" />
         </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/rop-service/src/main/java/com/seaboxdata/rop/service/impl/IResourceEsServiceImpl.java</url>
-          <line>111</line>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/rop-service/src/main/java/com/seaboxdata/rop/service/impl/ResourceEsServiceImpl.java</url>
+          <line>86</line>
           <properties />
-          <option name="timeStamp" value="13" />
+          <option name="timeStamp" value="25" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/rop-service/src/main/java/com/seaboxdata/rop/service/impl/IResourceEsServiceImpl.java</url>
-          <line>104</line>
+          <url>file://$PROJECT_DIR$/rop-service/src/main/java/com/seaboxdata/rop/controller/InfoResApplicationController.java</url>
+          <line>80</line>
           <properties />
-          <option name="timeStamp" value="22" />
+          <option name="timeStamp" value="27" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/rop-service/src/main/java/com/seaboxdata/rop/service/impl/IResourceEsServiceImpl.java</url>
-          <line>120</line>
+          <url>file://$PROJECT_DIR$/rop-service/src/main/java/com/seaboxdata/rop/service/impl/ResourceEsServiceImpl.java</url>
+          <line>121</line>
           <properties />
-          <option name="timeStamp" value="23" />
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/rop-service/src/main/java/com/seaboxdata/rop/service/impl/ResourceEsServiceImpl.java</url>
+          <line>116</line>
+          <properties />
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/rop-service/src/main/java/com/seaboxdata/rop/service/impl/ApplicationTypeServiceImpl.java</url>
+          <line>72</line>
+          <properties />
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/rop-service/src/main/java/com/seaboxdata/rop/service/impl/ApplicationTypeServiceImpl.java</url>
+          <line>88</line>
+          <properties />
+          <option name="timeStamp" value="35" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="SpringBootApplicationConfigurationType">
+        <watch expression="searchHits.getHits()" />
+        <watch expression="searchHits.getTotalHits().value" />
+        <watch expression="Arrays.stream(searchHits.getHits())" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="watch">
+      <expression>
+        <expression-string>e.getSourceAsMap()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/rop-frontier/src/main/java/com/seaboxdata/rop/service/NrdApplicationTypeService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dfjinxin-generator/src/main/resources/template/Resolver.java.vm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="57" selection-start-line="3" selection-start-column="57" selection-end-line="3" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.1.6.RELEASE/spring-beans-5.1.6.RELEASE.jar!/org/springframework/beans/factory/support/AbstractBeanFactory.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="182" selection-start-line="182" selection-end-line="182" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rop-api/src/main/java/com/seaboxdata/rop/api/vo/ApplicationTypeVo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/seaboxdata/commons/commons-core/1.0.0-SNAPSHOT/commons-core-1.0.0-SNAPSHOT.jar!/com/seaboxdata/commons/query/PaginationResult.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/rop-frontier/src/main/java/com/seaboxdata/rop/response/NrdApplicationTypePagination.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -967,13 +924,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rop-frontier/src/main/java/com/seaboxdata/rop/resolver/ApplicationTypeResolver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="45" column="53" selection-start-line="45" selection-start-column="53" selection-end-line="45" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/rop-service/src/main/java/com/seaboxdata/rop/controller/ApplicationTypeController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
@@ -992,16 +942,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1098">
           <caret line="61" column="33" selection-start-line="61" selection-start-column="33" selection-end-line="61" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rop-service/src/main/java/com/seaboxdata/rop/service/impl/ApplicationTypeServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1584">
-          <caret line="88" column="63" selection-start-line="88" selection-start-column="63" selection-end-line="88" selection-end-column="63" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1032,13 +972,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/rop-service/src/main/java/com/seaboxdata/rop/config/RedisConfig.java">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rop-service/src/main/java/com/seaboxdata/rop/utils/RedisUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3834">
-          <caret line="34" column="22" lean-forward="true" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/rop-service/src/main/java/com/seaboxdata/rop/service/IApplicationTypeService.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1105,13 +1038,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rop-frontier/src/main/resources/application-ccf.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="74">
-          <caret line="19" selection-start-line="19" selection-end-line="24" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/rop-api/src/main/java/com/seaboxdata/rop/api/controller/IApplicationTypeController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="74">
@@ -1143,20 +1069,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rop-service/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="490">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rop-service/src/main/java/com/seaboxdata/rop/service/impl/InfoResApplicationServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="76" column="53" selection-start-line="76" selection-start-column="33" selection-end-line="76" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/rop-frontier/src/main/java/com/seaboxdata/rop/resolver/InfoResApplicationResolver.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="74">
@@ -1182,20 +1094,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rop-service/src/main/java/com/seaboxdata/rop/controller/InfoResApplicationController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="37" column="37" lean-forward="true" selection-start-line="37" selection-start-column="37" selection-end-line="37" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rop-service/src/main/resources/application-ccf.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="65">
-          <caret line="45" column="17" lean-forward="true" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/rop-frontier/src/main/resources/graphql/ApplicationType.graphqls">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
@@ -1205,15 +1103,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/rop-frontier/src/main/resources/graphql/InfoResApplication.graphqls">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="61">
+        <state relative-caret-position="637">
           <caret line="38" column="6" selection-start-line="38" selection-start-column="6" selection-end-line="38" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rop-frontier/src/main/java/com/seaboxdata/rop/service/impl/NrdInfoResApplicationServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/rop-service/src/main/java/com/seaboxdata/rop/controller/InfoResApplicationController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="25" column="93" selection-start-line="25" selection-start-column="93" selection-end-line="25" selection-end-column="93" />
+        <state relative-caret-position="454">
+          <caret line="78" column="19" selection-start-line="78" selection-start-column="19" selection-end-line="78" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -1224,19 +1122,117 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rop-api/src/main/java/com/seaboxdata/rop/api/vo/InfoResApplicationVo.java">
+    <entry file="file://$PROJECT_DIR$/rop-frontier/src/main/java/com/seaboxdata/rop/service/impl/NrdInfoResApplicationServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="91" column="35" lean-forward="true" selection-start-line="91" selection-start-column="35" selection-end-line="91" selection-end-column="36" />
+        <state relative-caret-position="414">
+          <caret line="57" column="61" selection-start-line="57" selection-start-column="61" selection-end-line="57" selection-end-column="61" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rop-service/src/main/java/com/seaboxdata/rop/service/impl/IResourceEsServiceImpl.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.6.RELEASE/spring-web-5.1.6.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="43">
-          <caret line="121" column="35" selection-start-line="121" selection-start-column="35" selection-end-line="121" selection-end-column="35" />
+        <state relative-caret-position="151">
+          <caret line="107" selection-start-line="107" selection-end-line="107" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rop-api/src/main/java/com/seaboxdata/rop/api/vo/InfoResApplicationVo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="93" column="9" selection-start-line="93" selection-start-column="9" selection-end-line="93" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/7.1.0/elasticsearch-7.1.0.jar!/org/elasticsearch/search/fetch/subphase/highlight/HighlightBuilder.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="99" column="28" selection-start-line="99" selection-start-column="28" selection-end-line="99" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/7.1.0/elasticsearch-7.1.0.jar!/org/elasticsearch/index/query/Operator.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rop-service/src/main/java/com/seaboxdata/rop/model/ApplicationType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rop-service/src/main/java/com/seaboxdata/rop/service/impl/ResourceEsServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="153" column="13" selection-start-line="153" selection-start-column="13" selection-end-line="153" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dfjinxin-generator/src/main/resources/template/ServiceImpl.java.vm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="84" column="45" selection-start-line="84" selection-start-column="45" selection-end-line="84" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rop-service/src/main/java/com/seaboxdata/rop/service/impl/InfoResApplicationServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="83" column="73" selection-start-line="83" selection-start-column="73" selection-end-line="83" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rop-frontier/src/main/resources/application-ccf.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="2" lean-forward="true" selection-start-line="6" selection-start-column="2" selection-end-line="17" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rop-service/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="42" column="20" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rop-service/src/main/resources/application-ccf.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="42" column="20" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rop-frontier/src/main/java/com/seaboxdata/rop/resolver/ApplicationTypeResolver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="55" selection-start-line="55" selection-end-line="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rop-service/src/main/java/com/seaboxdata/rop/service/impl/ApplicationTypeServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="36" column="85" lean-forward="true" selection-start-line="36" selection-start-column="85" selection-end-line="36" selection-end-column="85" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rop-service/src/main/java/com/seaboxdata/rop/utils/RedisUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3618">
+          <caret line="318" column="46" selection-start-line="318" selection-start-column="43" selection-end-line="318" selection-end-column="46" />
+          <folding>
+            <element signature="e#2699#2700#0" expanded="true" />
+            <element signature="e#2733#2734#0" expanded="true" />
           </folding>
         </state>
       </provider>

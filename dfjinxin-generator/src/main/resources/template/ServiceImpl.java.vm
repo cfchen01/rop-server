@@ -80,9 +80,9 @@ public class ${className}ServiceImpl extends ServiceImpl<${className}Mapper, ${c
 
     @Override
     public Boolean ${classname}Update(${className}Vo ${classname}Vo) {
-        ${className} name = new ${className}();
-        BeanUtils.copyProperties(${classname}Vo, name);
-        return mapper.updateById(name) > 0;
+        ${className} ${classname} = new ${className}();
+        BeanUtils.copyProperties(${classname}Vo, ${classname});
+        return mapper.updateById(${classname}) > 0;
     }
 #if(${pk})
     @Override

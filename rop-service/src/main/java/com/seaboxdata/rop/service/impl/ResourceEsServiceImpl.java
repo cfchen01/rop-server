@@ -1,9 +1,7 @@
 package com.seaboxdata.rop.service.impl;
 
 import com.alibaba.fastjson.JSON;
-import com.alibaba.fastjson.JSONObject;
 import com.seaboxdata.commons.query.PaginationResult;
-import com.seaboxdata.rop.api.input.InfoResApplicationInput;
 import com.seaboxdata.rop.api.input.InfoResApplicationPageInput;
 import com.seaboxdata.rop.api.vo.InfoResApplicationVo;
 import com.seaboxdata.rop.service.IResourceEsService;
@@ -20,8 +18,7 @@ import org.elasticsearch.client.RequestOptions;
 import org.elasticsearch.client.RestHighLevelClient;
 import org.elasticsearch.common.text.Text;
 import org.elasticsearch.common.xcontent.XContentType;
-import org.elasticsearch.index.query.BoolQueryBuilder;
-import org.elasticsearch.index.query.QueryBuilders;
+import org.elasticsearch.index.query.*;
 import org.elasticsearch.search.SearchHit;
 import org.elasticsearch.search.SearchHits;
 import org.elasticsearch.search.builder.SearchSourceBuilder;
@@ -43,7 +40,7 @@ import static java.util.stream.Collectors.toList;
 
 @Slf4j
 @Service
-public class IResourceEsServiceImpl implements IResourceEsService {
+public class ResourceEsServiceImpl implements IResourceEsService {
 
     private static String APP_ES_INDEX = "app_es_index";
 
@@ -100,6 +97,71 @@ public class IResourceEsServiceImpl implements IResourceEsService {
         return true;
     }
 
+//    @Override
+//    public PaginationResult<InfoResApplicationVo> getMsg(InfoResApplicationPageInput input) {
+//        log.info("InfoResApplicationPageInput : {}",input.toString());
+//        Assert.notNull(input, "查询参数不能为空");
+//        BoolQueryBuilder boolQueryBuilder = new BoolQueryBuilder();
+//        if (StringUtils.isNotBlank(input.getKeyword())) {
+//            boolQueryBuilder.must(genMust(input.getKeyword()));
+//        }
+//        if (!ObjectUtils.isEmpty(input.getAppType())){
+//            boolQueryBuilder.must(new TermQueryBuilder("appType",input.getAppType()));
+//        }
+//        SearchResponse searchResponse = null;
+//        try {
+////            IndexRequest request = new IndexRequest(APP_ES_INDEX);
+////            GetRequest request1 = new GetRequest(APP_ES_INDEX,1+"");
+//
+//
+////            GetResponse documentFields = restHighLevelClient.get(request1, RequestOptions.DEFAULT);
+////
+////            documentFields.getSourceAsString();
+//
+//
+////            request.setRefreshPolicy(WriteRequest.RefreshPolicy.IMMEDIATE);
+//            searchResponse = restHighLevelClient.search(new SearchRequest(APP_ES_INDEX)
+//                            .source(new SearchSourceBuilder()
+//                                    .size(input.getLimit())
+//                                    .from(input.getOffset())
+//                                    .query(boolQueryBuilder)
+//                                    .highlighter(getHighlightBuilder())
+////                                    .sort("taskRunTime", SortOrder.DESC)
+//                            )
+//                    ,
+//                    RequestOptions.DEFAULT);
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+//
+//        SearchHits searchHits = searchResponse.getHits();
+//
+//        Optional<PaginationResult<InfoResApplicationVo>> paginationResult = Optional.of(new PaginationResult((int) searchHits.getTotalHits().value, input.getOffset(), input.getLimit(),
+//                Arrays.stream(searchHits.getHits())
+//                        .map(e -> processHighlight(e, InfoResApplicationVo.readValue(e.getSourceAsString())))
+//                        .filter(Optional::isPresent).map(Optional::get)
+////                        .map(EsUtils::of).filter(Optional::isPresent).map(Optional::get)
+//                        .collect(toList())));
+//
+//        if (paginationResult.isPresent()) {
+//            return paginationResult.get();
+//        } else {
+//            return null;
+//        }
+//    }
+//
+//    /***
+//     * 过滤字段
+//     * @param keywork
+//     * @return
+//     */
+//    private QueryBuilder genMust(String keywork) {
+//        return new BoolQueryBuilder()
+//                .should(new MatchQueryBuilder("appName", keywork).operator(Operator.OR).boost(2))
+//                .should(new MatchQueryBuilder("appBrief", keywork).operator(Operator.OR).boost(1))
+//                .should(new MatchQueryBuilder("appProvider", keywork).operator(Operator.OR).boost(1));
+//    }
+//
     @Override
     public PaginationResult<InfoResApplicationVo> getMsg(InfoResApplicationPageInput infoResApplicationPageInput) {
         BoolQueryBuilder boolQueryBuilder = QueryBuilders.boolQuery();
@@ -110,9 +172,6 @@ public class IResourceEsServiceImpl implements IResourceEsService {
             BoolQueryBuilder tempQueryBuilder = QueryBuilders.boolQuery();
             for (String str : s) {
                 tempQueryBuilder.should(QueryBuilders.multiMatchQuery(str, "appName", "appBrief", "appProvider"));
-//                boolQueryBuilder.should(QueryBuilders.wildcardQuery("appName.keyword", "*" + str + "*"))
-//                .should(QueryBuilders.wildcardQuery("appBrief.keyword", "*" + str + "*"))
-//                .should(QueryBuilders.wildcardQuery("appProvider.keyword", "*" + str + "*"));
             }
             // 模糊查询
             boolQueryBuilder.must(tempQueryBuilder);
@@ -123,7 +182,6 @@ public class IResourceEsServiceImpl implements IResourceEsService {
         }
         return listResourceUtil(boolQueryBuilder, infoResApplicationPageInput.getLimit(), infoResApplicationPageInput.getOffset());
     }
-
 
     private PaginationResult listResourceUtil(BoolQueryBuilder boolQueryBuilder, Integer size, Integer from) {
         log.info("查询的语句:" + boolQueryBuilder.toString());
@@ -158,7 +216,7 @@ public class IResourceEsServiceImpl implements IResourceEsService {
                                     .from(from)
                                     .query(boolQueryBuilder)
                                     .highlighter(getHighlightBuilder())
-                                    .sort(SortBuilders.fieldSort("app_id").unmappedType("long").order(SortOrder.DESC))
+                                    .sort(SortBuilders.fieldSort("appId").unmappedType("long").order(SortOrder.DESC))
 //                                    .fetchSource(fields, ex)
                             ),
                     RequestOptions.DEFAULT);
@@ -174,37 +232,59 @@ public class IResourceEsServiceImpl implements IResourceEsService {
         return result;
     }
 
-    /**
-     * @Author chaobin
-     * @Description 搜索关键字加高亮
-     * @Date 2019-06-17 14:34
-     **/
-    private Optional<InfoResApplicationVo> processHighlight(SearchHit e
-            , Optional<InfoResApplicationVo> esScheduleOP) {
-        if (!esScheduleOP.isPresent()) {
-            return Optional.empty();
-        }
-        InfoResApplicationVo resApplication = esScheduleOP.get();
-        Map<String, HighlightField> map = e.getHighlightFields();
-
-        HighlightField descriptionHighlightField = map.get("appName");
-        if (null != descriptionHighlightField) {
-            Text[] descFragments = descriptionHighlightField.getFragments();
-            if (descFragments.length > 0) {
-                String name = descFragments[0].toString();
-                resApplication.setAppName(name);
-            }
-        }
-        return Optional.of(resApplication);
-    }
-
-
     /***
      * 高亮
      * @return
      */
     private HighlightBuilder getHighlightBuilder() {
         return new HighlightBuilder()
-                .field(new HighlightBuilder.Field("appName"));
+                .field(new HighlightBuilder.Field("appName"))
+                .field(new HighlightBuilder.Field("appBrief"))
+                .field(new HighlightBuilder.Field("appProvider"));
     }
+
+    /**
+     * @Author chaobin
+     * @Description 搜索关键字加高亮
+     * @Date 2019-06-17 14:34
+     **/
+    private Optional<InfoResApplicationVo> processHighlight(SearchHit e, Optional<InfoResApplicationVo> resApplicationVoOP) {
+        if (!resApplicationVoOP.isPresent()) {
+            return Optional.empty();
+        }
+        InfoResApplicationVo resApplicationVo = resApplicationVoOP.get();
+        Map<String, HighlightField> map = e.getHighlightFields();
+
+        //获取appName
+        HighlightField nameHighlightField = map.get("appName");
+        if (null != nameHighlightField) {
+            Text[] nameFragments = nameHighlightField.getFragments();
+            if (nameFragments.length > 0) {
+                String appName = nameFragments[0].toString();
+                resApplicationVo.setAppName(appName);
+            }
+        }
+
+        //获取appBrief
+        HighlightField briefHighlightField = map.get("appBrief");
+        if (null != briefHighlightField) {
+            Text[] briefFragments = briefHighlightField.getFragments();
+            if (briefFragments.length > 0) {
+                String appBrief = briefFragments[0].toString();
+                resApplicationVo.setAppBrief(appBrief);
+            }
+        }
+        //获取appProvider
+        HighlightField providerHighlightField = map.get("appProvider");
+        if (null != providerHighlightField) {
+            Text[] providerFragments = providerHighlightField.getFragments();
+            if (providerFragments.length > 0) {
+                String appProvider = providerFragments[0].toString();
+                resApplicationVo.setAppProvider(appProvider);
+            }
+        }
+
+        return Optional.of(resApplicationVo);
+    }
+
 }

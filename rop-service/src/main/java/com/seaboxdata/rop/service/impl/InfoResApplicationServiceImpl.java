@@ -80,9 +80,9 @@ public class InfoResApplicationServiceImpl extends ServiceImpl<InfoResApplicatio
 
     @Override
     public Boolean infoResApplicationUpdate(InfoResApplicationVo infoResApplicationVo) {
-        InfoResApplication name = new InfoResApplication();
-        BeanUtils.copyProperties(infoResApplicationVo, name);
-        return mapper.updateById(name) > 0;
+        InfoResApplication infoResApplication = new InfoResApplication();
+        BeanUtils.copyProperties(infoResApplicationVo, infoResApplication);
+        return mapper.updateById(infoResApplication) > 0;
     }
     @Override
     public InfoResApplicationVo infoResApplicationDetail(Integer appId) {

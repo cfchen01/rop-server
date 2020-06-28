@@ -1,6 +1,6 @@
 package com.seaboxdata.rop.controller;
 
-import com.seaboxdata.rop.service.impl.IResourceEsServiceImpl;
+import com.seaboxdata.rop.service.impl.ResourceEsServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RestController;
 import com.seaboxdata.commons.query.PaginationResult;
@@ -9,7 +9,6 @@ import com.seaboxdata.rop.api.controller.IInfoResApplicationController;
 import com.seaboxdata.rop.api.input.InfoResApplicationPageInput;
 import com.seaboxdata.rop.api.vo.InfoResApplicationVo;
 
-import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -26,7 +25,7 @@ public class InfoResApplicationController implements IInfoResApplicationControll
     private IInfoResApplicationService infoResApplicationService;
 
     @Autowired
-    private IResourceEsServiceImpl resourceEsService;
+    private ResourceEsServiceImpl resourceEsService;
 
     /**
      * 分页

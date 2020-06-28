@@ -29,7 +29,18 @@ spring:
   elasticsearch:
     rest:
       uris: localhost:9200
-
+  redis:
+    database: 0
+    host: localhost
+    jedis:
+      pool:
+        max-active: 100
+        max-wait: 2000
+        max-idle: 500
+        min-idle: 8
+    timeout: 5000
+    port: 6379
+    password: 123456
 elasticsearch:
   hostName: localhost
   rest-port: 9200
